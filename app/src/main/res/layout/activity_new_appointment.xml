@@ -1,0 +1,339 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#E0F7FA"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="6dp">
+
+
+
+        <TextView
+            android:id="@+id/new_appointment_textView_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            android:text="Create New Appointment"
+            android:gravity="center_horizontal"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:layout_marginTop="8dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0" />
+
+
+        <View
+            android:id="@+id/new_appointment_horizontal_line_id"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@color/teal_700"
+            android:layout_marginTop="4dp"
+            app:layout_constraintTop_toBottomOf="@id/new_appointment_textView_id"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginHorizontal="16dp"
+            />
+
+
+
+
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/new_appointment_problem_title_textInputLayout_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Title"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="2dp"
+            android:layout_marginEnd="2dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/new_appointment_horizontal_line_id"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/new_appointment_problem_title_editText_id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="normal"
+                android:maxLines="1"
+                />
+
+
+
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/new_appointment_problem_description_textInputLayout_id"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:layout_marginStart="2dp"
+            android:layout_marginEnd="2dp"
+            android:hint="Description"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+
+            app:layout_constraintTop_toBottomOf="@+id/new_appointment_problem_title_textInputLayout_id">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/new_appointment_problem_description_editText_id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="normal"
+                />
+
+
+
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/new_appointment_choose_doctor_constraint_layout_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/new_appointment_problem_description_textInputLayout_id"
+            android:layout_margin="2dp">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:layout_margin="2dp"
+                android:text="Choose A Doctor:"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:textSize="18sp"/>
+
+            <ImageButton
+                android:id="@+id/new_appointment_choose_doctor_image_button_id"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/ic_baseline_choose_doctor_24"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:layout_marginEnd="4dp"
+                android:backgroundTint="@color/teal_700"
+                app:tint="@color/white" />
+
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/new_appointment_choose_doctor_recyclerView_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="2dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/new_appointment_choose_doctor_constraint_layout_id"/>
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/new_appointment_doctor_description_constraint_layout_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="6dp"
+            app:layout_constraintTop_toBottomOf="@id/new_appointment_choose_doctor_recyclerView_id">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/new_appointment_doctor_display_image_civ_id"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:layout_margin="8dp"
+                android:src="@drawable/d1"/>
+
+            <TextView
+                android:id="@+id/new_appointment_doctor_name_textView_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toTopOf="@id/new_appointment_doctor_display_image_civ_id"
+                app:layout_constraintStart_toEndOf="@id/new_appointment_doctor_display_image_civ_id"
+                android:text="Dr. Alexadra"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="2dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0"
+
+                />
+
+            <TextView
+                android:id="@+id/new_appointment_doctor_details_textView_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="@id/new_appointment_doctor_name_textView_id"
+                app:layout_constraintTop_toBottomOf="@id/new_appointment_doctor_name_textView_id"
+                app:layout_constraintBottom_toBottomOf="@id/new_appointment_doctor_display_image_civ_id"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0"
+                android:text="Specialist in Psychology"
+                />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@id/new_appointment_choose_date_image_button_id"
+            app:layout_constraintBottom_toBottomOf="@id/new_appointment_choose_date_image_button_id"
+            android:text="Choose A Date:"
+            android:textSize="18sp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:layout_marginStart="2dp"
+            />
+
+        <ImageButton
+            android:id="@+id/new_appointment_choose_date_image_button_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/new_appointment_doctor_description_constraint_layout_id"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:src="@drawable/ic_baseline_date_range_24"
+            app:tint="@color/white"
+            android:layout_marginEnd="4dp"
+            android:backgroundTint="@color/teal_700"
+            android:layout_marginTop="4dp"/>
+
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/new_appointment_pick_date_constraint_layout_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/new_appointment_choose_date_image_button_id">
+
+            <TextView
+                android:id="@+id/new_appointment_pick_time_textView_id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:text="Pick A Time: "
+                android:textColor="@color/black"
+                android:layout_margin="2dp"
+                android:textStyle="bold"
+                android:textSize="16sp"
+
+                />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/new_appointment_pick_time_recyclerView_id"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="2dp"
+                android:layout_marginEnd="2dp"
+                android:layout_margin="8dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/new_appointment_pick_time_textView_id"
+                app:layout_constraintBottom_toBottomOf="parent"
+                />
+
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <TextView
+            android:id="@+id/new_appointment_date_time_title_textview_textView_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Appointment Date and Time:"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/new_appointment_pick_date_constraint_layout_id"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginEnd="4dp"
+            android:gravity="center"
+            />
+
+        <View
+            android:id="@+id/new_appointment_horizontal_line2_id"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            app:layout_constraintTop_toBottomOf="@id/new_appointment_date_time_title_textview_textView_id"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginHorizontal="40dp"
+            android:background="@color/black"
+            android:layout_marginTop="2dp"
+            />
+
+
+
+        <TextView
+            android:id="@+id/new_appointment_chosen_date_time_textView_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="27/11/21 18:00"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/new_appointment_horizontal_line2_id"
+            android:textSize="26sp"
+            android:textColor="@color/teal_700"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginEnd="4dp"
+            android:gravity="center"
+            />
+
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/new_appointment_confirm_appointment_button_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/new_appointment_chosen_date_time_textView_id"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="20dp"
+            android:text="Make An Appointment"
+
+            />
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

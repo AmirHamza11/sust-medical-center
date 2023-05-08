@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="4dp"
+    app:cardCornerRadius="8dp"
+    app:strokeWidth="0.5dp"
+    app:strokeColor="@color/black"
+    android:elevation="4dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/doctor_single_appointment_first_constraintLayout_id"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="6dp">
+
+        <TextView
+            android:id="@+id/doctor_single_appointment_time_textView_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBaseline_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:text="9:30 AM"
+            android:textColor="#2986cc"
+            android:textSize="18sp"
+            android:textStyle="bold"
+
+            />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/doctor_single_appointment_displayImage_CIV_id"
+            android:visibility="gone"
+            android:layout_width="47dp"
+            android:layout_height="47dp"
+            app:layout_constraintTop_toBottomOf="@id/doctor_single_appointment_time_textView_id"
+            app:layout_constraintStart_toStartOf="parent"
+            android:src="@drawable/d1"
+            android:layout_marginTop="4dp"
+
+
+            />
+
+        <TextView
+            android:id="@+id/doctor_single_appointment_name_textView_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="Ethan Hunt"
+            app:layout_constrainedWidth="true"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toStartOf="@+id/doctor_single_appointment_suspend_button_id"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@id/doctor_single_appointment_displayImage_CIV_id"
+            app:layout_constraintTop_toBottomOf="@id/doctor_single_appointment_time_textView_id" />
+
+        <TextView
+            android:id="@+id/doctor_single_appointment_user_missCount_textView_id"
+            android:layout_width="wrap_content"
+            android:visibility="gone"
+            android:layout_height="wrap_content"
+            android:text="Missed: 3"
+            android:textColor="@color/black"
+            app:layout_constraintHorizontal_bias="0"
+            android:layout_marginTop="2dp"
+            app:layout_constraintEnd_toStartOf="@+id/doctor_single_appointment_suspend_button_id"
+            app:layout_constraintStart_toStartOf="@id/doctor_single_appointment_name_textView_id"
+            app:layout_constraintTop_toBottomOf="@id/doctor_single_appointment_name_textView_id" />
+
+        <TextView
+            app:layout_constraintHorizontal_chainStyle="spread"
+            android:id="@+id/doctor_single_appointment_problem_title_textView_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Having a metabolic problem"
+            app:layout_constrainedWidth="true"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="6dp"
+            app:layout_constraintEnd_toStartOf="@+id/doctor_single_appointment_suspend_button_id"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintHorizontal_bias="0"
+            app:layout_constraintBottom_toTopOf="@id/doctor_single_appointment_second_constraintLayout_id"
+            app:layout_constraintTop_toBottomOf="@+id/doctor_single_appointment_user_missCount_textView_id" />
+
+
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/doctor_single_appointment_suspend_button_id"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="4dp"
+            android:text="Suspend"
+            android:textColor="#ff2818"
+            app:cornerRadius="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/doctor_single_appointment_time_textView_id"
+            app:strokeColor="#ff2818" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/doctor_single_appointment_second_constraintLayout_id"
+            android:visibility="gone"
+            android:layout_marginTop="2dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@+id/doctor_single_appointment_problem_title_textView_id"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginBottom="2dp">
+
+            <TextView
+                android:id="@+id/doctor_single_appointment_problem_details_textView_id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                 dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
+                  ut aliquip ex ea commodo consequat."
+                />
+
+            <com.google.android.material.button.MaterialButton
+                style="@style/Widget.MaterialComponents.Button.TextButton"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:text="Inbox"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/doctor_single_appointment_problem_details_textView_id"
+
+                app:strokeColor="#2986cc" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</com.google.android.material.card.MaterialCardView>

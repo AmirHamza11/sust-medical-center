@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="4dp"
+    android:padding="8dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+
+
+    <TextView
+        android:id="@+id/prescription_list_item_medicine_name_textView_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15dp"
+        android:text="Tufnil"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginBottom="5dp"
+        app:layout_constraintEnd_toStartOf="@id/prescription_list_item_delete_medicine_button_id"
+        app:layout_constraintHorizontal_bias="0"
+        app:layout_constraintBottom_toTopOf="@id/prescription_list_item_medicine_dosage_textView_id"
+        />
+
+
+    <TextView
+        android:id="@+id/prescription_list_item_medicine_dosage_textView_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Time to take: 1 + 0 + 1 "
+        android:textSize="15dp"
+        android:layout_marginTop="4dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/prescription_list_item_delete_medicine_button_id"
+        app:layout_constraintHorizontal_bias="0"
+        app:layout_constraintTop_toBottomOf="@id/prescription_list_item_medicine_name_textView_id" />
+
+    <ImageButton
+        android:id="@+id/prescription_list_item_delete_medicine_button_id"
+        android:visibility="gone"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:src="@drawable/ic__delete"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="1"
+        app:tint="#FF0000" />
+</androidx.constraintlayout.widget.ConstraintLayout>

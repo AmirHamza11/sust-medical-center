@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <item android:id="@+id/home_fragment_requested_users_menu_option_id"
+        android:title="Requested Users"
+        app:showAsAction="ifRoom"
+        android:icon="@drawable/ic_baseline_requested_users_24"
+        app:iconTint="@color/white"
+        />
+
+    <item android:id="@+id/home_fragment_notifications_menu_option_id"
+        android:title="@string/string_Notifications"
+        app:showAsAction="ifRoom"
+        android:icon="@drawable/ic_home_fragment_notifications_24"
+        app:iconTint="@color/white"
+        />
+
+
+
+</menu>

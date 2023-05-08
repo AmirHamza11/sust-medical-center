@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:clickable="true"
+    android:focusable="true"
+    android:elevation="0dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="0dp">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/inbox_person_profile_image_id"
+            android:layout_width="58dp"
+            android:layout_height="58dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:src="@drawable/profile"
+            android:layout_marginStart="8dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+        <View
+            android:id="@+id/inbox_person_active_indicator_id"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            app:layout_constraintBottom_toBottomOf="@id/inbox_person_profile_image_id"
+            app:layout_constraintEnd_toEndOf="@id/inbox_person_profile_image_id"
+            android:layout_marginEnd="4dp"
+            android:layout_marginBottom="4dp"
+            android:background="@drawable/person_active_indicator"
+            />
+
+        <TextView
+            android:id="@+id/inbox_person_userName_id"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/string_User_Name"
+            app:layout_constraintEnd_toStartOf="@+id/inbox_person_last_message_date_id"
+            app:layout_constraintStart_toEndOf="@id/inbox_person_profile_image_id"
+            android:layout_marginStart="6dp"
+            android:layout_marginEnd="4dp"
+            android:maxLines="1"
+            app:layout_constraintTop_toTopOf="@id/inbox_person_profile_image_id"
+            android:layout_marginTop="6dp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textSize="17sp"/>
+
+        <TextView
+            android:id="@+id/inbox_person_last_message_id"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:maxLines="1"
+            app:layout_constraintVertical_bias="0.1"
+            android:text="Hi! How are you?"
+            android:textSize="14sp"
+            android:ellipsize="end"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@id/inbox_person_userName_id"
+            app:layout_constraintTop_toBottomOf="@id/inbox_person_userName_id" />
+
+        <TextView
+            android:id="@+id/inbox_person_last_message_date_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/inbox_person_userName_id"
+            app:layout_constraintTop_toTopOf="@id/inbox_person_userName_id"
+            android:layout_marginEnd="8dp"
+            android:textSize="12sp"
+            android:text="27/5/21"/>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0.8dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@id/inbox_person_profile_image_id"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:background="#bdbdbd"
+            android:layout_marginEnd="8dp"
+            />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</com.google.android.material.card.MaterialCardView>

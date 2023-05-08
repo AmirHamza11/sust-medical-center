@@ -1,0 +1,50 @@
+<resources>
+    <string name="app_name">SUST Medical Center</string>
+    <string name="dashboard_bottom_nav_home_string">Home</string>
+    <string name="dashboard_bottom_nav_inbox_string">Inbox</string>
+    <string name="dashboard_bottom_nav_profile_string">Profile</string>
+    <string name="string_Notifications">Notifications</string>
+    <string name="string_Settings">Settings</string>
+    <string name="string_Search">Search</string>
+    <string name="string_User_Name">User Name</string>
+    <string name="string_registration">registration</string>
+    <string name="string_Display_Image">Display_Image</string>
+    <string name="string_Appointment">Appointment</string>
+    <string name="string_News">News</string>
+    <string name="string_Prescription">Prescriptions</string>
+    <string name="string_Blood_Group">Blood Group</string>
+    <string name="string_Services">Services</string>
+    <string name="string_Info">Info</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_account_requests">AccountRequestsActivity</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+    <string name="NewsContent">Early findings suggest that Omicron might be less severe than the Delta variant, but more data is needed and WHO warns that it should not be dismissed as “mild”. Studies are ongoing and this information will be updated as it becomes available.\n
+
+\nIt is important to remember that all variants of COVID-19 can cause severe disease or death, including the Delta variant that is still dominant worldwide, which is why preventing the spread of the virus and reducing your risk of exposure to the virus is so important.\n
+    \nWHO reports that early evidence suggests that previous infection could offer less protection against Omicron in comparison to other variants of concern, such as Delta. Information is still limited though and we will share updates as it becomes available.
+
+You should get vaccinated even if you’ve previously had COVID-19. While people who recover from COVID-19 may develop some natural immunity to the virus, we do not yet know how long it lasts or how well you are protected. Vaccines offer more reliable protection.
+    </string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="About_us">www.sust.edu/offices/other-offices/14</string>
+    <string name="service_content">1. Routine medical examinations and health checkups (blood pressure, RBS by glucometer etc.)\n
+\n2. Treatment of illness, injury, and other physical problems.\n
+\n3. Minor Surgical Procedures (drainage of abscess ,boil etc)\n
+\n4. Minor Wound Management.\n
+\n5. Sports Injury Management.\n
+\n6. Travel Medicine and Advice.\n
+\n7. Advice and assistance for students with examination difficulties.\n
+\n8. Special arrangements for students with disabilities and sick students.\n
+\n9. Referral to specialists ,imaging services, pathology, and physiotherapy according to need and condition of the patient
+\n10. Organize blood grouping and donation campaign under direct supervision\n
+\n11. Vaccination :Hepatitis B and Ca cervix\n
+\n12. Issuing medical card for the students and give medical clearance after completion of their respective courses(Bsc, Msc)\n
+\n13. Medical Assessments/Pre-Employment Medicals :By issuing fitness certificate\n\n\n
+    </string>
+</resources>

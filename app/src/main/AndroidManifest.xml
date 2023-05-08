@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.sustmedicalcenter">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.SUSTMedicalCenter">
+        <activity
+            android:name=".ServiceMedicineActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ServiceTextview"
+            android:exported="false" />
+        <activity
+            android:name=".Services"
+            android:exported="false" />
+        <activity
+            android:name=".Settings"
+            android:exported="false" />
+        <activity
+            android:name=".OtherUserProfileActivity"
+            android:exported="false" />
+        <activity
+            android:name=".InitialAccountDetails"
+            android:exported="false" />
+        <activity
+            android:name=".AccountRequestsFullAccountDetailsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AccountRequestsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ModeratorAppointmentsListActivity"
+            android:exported="false" />
+        <activity
+            android:name=".NewAppointmentActivity"
+            android:exported="false" />
+        <activity
+            android:name=".NewsActivity"
+            android:exported="true" />
+        <activity
+            android:name=".AddNewsActivity"
+            android:exported="true" />
+        <activity
+            android:name=".FullNewsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".BloodActivity"
+            android:exported="true" />
+        <activity
+            android:name=".BloodListActivity"
+            android:exported="true" />
+        <activity android:name=".DoctorAllScheduleActivity" />
+        <activity android:name=".ChatRoomActivity" />
+        <activity
+            android:name=".SignupLoginActivity"
+            android:exported="true" />
+        <activity android:name=".StudentAppointmentListActivity" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:theme="@style/SplashScreenTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

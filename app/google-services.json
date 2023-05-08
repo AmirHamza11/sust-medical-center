@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "571618791721",
+    "project_id": "sust-medical-center",
+    "storage_bucket": "sust-medical-center.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:571618791721:android:1bf8b215ec51525cb66738",
+        "android_client_info": {
+          "package_name": "com.example.sustmedicalcenter"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "571618791721-4sjaq11hk989u9osih1nfeiipduqe8mr.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.sustmedicalcenter",
+            "certificate_hash": "8fc9217b0429ef813aba48b616050052024cae19"
+          }
+        },
+        {
+          "client_id": "571618791721-gneb5ckcq0d7h8kqn3603m2455rpi10n.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBHt__gmls8FBViU2Jx2XcCEzwMquPx3iw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "571618791721-gneb5ckcq0d7h8kqn3603m2455rpi10n.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

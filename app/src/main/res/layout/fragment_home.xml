@@ -1,0 +1,335 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#e0e0e0"
+    android:overScrollMode="never"
+    android:scrollbars="none">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <ImageView
+
+            android:layout_width="match_parent"
+            android:layout_height="220dp"
+            android:background="?attr/colorPrimary"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/home_fragment_display_picture_id"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="15dp"
+
+            android:src="@drawable/profile"
+            app:civ_border_width="2dp"
+            app:layout_constraintStart_toStartOf="parent"
+
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/home_fragment_username_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/string_User_Name"
+            android:textStyle="bold"
+            android:textSize="25sp"
+            app:layout_constraintStart_toEndOf="@+id/home_fragment_display_picture_id"
+            app:layout_constraintTop_toTopOf="@+id/home_fragment_display_picture_id"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/white"
+            android:layout_marginStart="8dp"/>
+
+        <TextView
+            android:id="@+id/home_fragment_registration_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/string_registration"
+            app:layout_constraintStart_toEndOf="@+id/home_fragment_display_picture_id"
+            app:layout_constraintTop_toBottomOf="@id/home_fragment_username_id"
+            android:layout_marginTop="2dp"
+            android:textSize="18sp"
+            android:textColor="@color/white"
+            android:layout_marginStart="8dp"/>
+
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="25dp"
+            android:columnCount="2"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:paddingBottom="8dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/home_fragment_display_picture_id">
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/home_fragment_appointment_cardView_id"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:elevation="8dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginStart="15dp"
+                android:clickable="true"
+                android:focusable="true"
+                app:rippleColor="?attr/colorSecondaryVariant"
+                android:layout_marginEnd="15dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <com.airbnb.lottie.LottieAnimationView
+                        android:layout_width="match_parent"
+                        android:layout_height="130dp"
+                        android:padding="8dp"
+                        app:lottie_rawRes="@raw/appointment"
+                        app:lottie_autoPlay="true"
+                        app:lottie_loop="true"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:padding="3dp"
+                        android:text="@string/string_Appointment"
+                        android:textStyle="bold"
+                        android:textAppearance="?attr/textAppearanceSubtitle1" />
+
+
+                </LinearLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/home_fragment_news_cardView_id"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:elevation="8dp"
+                android:clickable="true"
+                android:focusable="true"
+                app:rippleColor="?attr/colorSecondaryVariant"
+                android:layout_marginTop="15dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <com.airbnb.lottie.LottieAnimationView
+                        android:layout_width="match_parent"
+                        android:layout_height="130dp"
+                        app:lottie_rawRes="@raw/news"
+                        app:lottie_autoPlay="true"
+                        app:lottie_loop="true"
+                        />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:padding="3dp"
+                        android:text="@string/string_News"
+                        android:textStyle="bold"
+                        android:textAppearance="?attr/textAppearanceSubtitle1"/>
+
+
+
+                </LinearLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+
+
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/home_fragment_blood_group_cardView_id"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:elevation="8dp"
+                android:clickable="true"
+                android:focusable="true"
+                app:rippleColor="?attr/colorSecondaryVariant"
+                android:layout_marginTop="15dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <com.airbnb.lottie.LottieAnimationView
+                        android:layout_width="match_parent"
+                        android:layout_height="130dp"
+                        android:padding="14dp"
+                        app:lottie_rawRes="@raw/blood_group"
+                        app:lottie_autoPlay="true"
+                        app:lottie_loop="true"
+                        />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:padding="3dp"
+                        android:text="@string/string_Blood_Group"
+                        android:textStyle="bold"
+                        android:textAppearance="?attr/textAppearanceSubtitle1" />
+
+
+                </LinearLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/home_fragment_services_cardView_id"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:elevation="8dp"
+                android:clickable="true"
+                android:focusable="true"
+                app:rippleColor="?attr/colorSecondaryVariant"
+                android:layout_marginTop="15dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginBottom="15dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <com.airbnb.lottie.LottieAnimationView
+                        android:layout_width="match_parent"
+                        android:layout_height="130dp"
+                        android:padding="8dp"
+                        app:lottie_rawRes="@raw/medical_services"
+                        app:lottie_autoPlay="true"
+                        app:lottie_loop="true"
+                         />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:padding="3dp"
+                        android:text="@string/string_Services"
+                        android:textStyle="bold"
+                        android:textAppearance="?attr/textAppearanceSubtitle1" />
+
+
+                </LinearLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/home_fragment_info_cardView_id"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:elevation="8dp"
+                android:clickable="true"
+                android:focusable="true"
+                app:rippleColor="?attr/colorSecondaryVariant"
+                android:layout_marginTop="15dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginBottom="15dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <com.airbnb.lottie.LottieAnimationView
+                        android:layout_width="match_parent"
+                        android:layout_height="130dp"
+                        android:padding="14dp"
+                        app:lottie_rawRes="@raw/info"
+                        app:lottie_autoPlay="true"
+                        app:lottie_loop="true"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:padding="3dp"
+                        android:text="@string/string_Info"
+                        android:textStyle="bold"
+                        android:textAppearance="?attr/textAppearanceSubtitle1" />
+
+
+                </LinearLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/home_fragment_settings_cardView_id"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:elevation="8dp"
+                android:clickable="true"
+                android:focusable="true"
+                app:rippleColor="?attr/colorSecondaryVariant"
+                android:layout_marginTop="15dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <com.airbnb.lottie.LottieAnimationView
+                        android:layout_width="match_parent"
+                        android:layout_height="130dp"
+                        android:padding="8dp"
+                        app:lottie_rawRes="@raw/settings_roll"
+                        app:lottie_autoPlay="true"
+                        app:lottie_loop="true"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:padding="3dp"
+                        android:text="Settings"
+                        android:textStyle="bold"
+                        android:textAppearance="?attr/textAppearanceSubtitle1" />
+
+
+                </LinearLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+
+
+        </GridLayout>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</ScrollView>

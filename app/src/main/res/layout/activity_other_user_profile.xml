@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:scrollbars="none">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <View
+            android:id="@+id/other_user_profile_view_id"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:background="?attr/colorPrimary"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginBottom="-5dp"
+            app:layout_constraintBottom_toBottomOf="@id/other_user_profile_chat_button_id"
+            />
+
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/other_user_profile_display_image_civ_id"
+            android:layout_width="200dp"
+            android:layout_marginBottom="20dp"
+            android:layout_height="150dp"
+            android:layout_marginStart="105dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="105dp"
+            android:src="@drawable/image"
+            app:civ_border_color="#000000"
+            app:civ_border_width="2dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/other_user_profile_user_name_tv_id"
+            android:layout_width="300dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginBottom="436dp"
+            android:gravity="center_horizontal"
+            android:text="Meow Meow"
+            android:textAlignment="center"
+            android:textAllCaps="true"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:textSize="27sp"
+            android:textStyle="bold"
+            android:visibility="visible"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.493"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/other_user_profile_display_image_civ_id"
+            app:layout_constraintVertical_bias="0.05"
+            android:textColor="@color/white"
+            tools:visibility="visible" />
+
+
+        <TextView
+            android:id="@+id/other_user_profile_email_tv_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableStart="@drawable/ic_baseline_email2_24"
+            android:drawablePadding="10dp"
+            android:text="Email"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            android:layout_marginTop="5dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/other_user_profile_user_name_tv_id" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/other_user_profile_chat_button_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:text="Chat"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            app:icon="@drawable/ic_baseline_message_24"
+            app:iconTint="@color/white"
+            app:iconGravity="start"
+            android:textSize="15sp"
+            app:iconPadding="10dp"
+            android:layout_marginEnd="8dp"
+            app:layout_constraintTop_toBottomOf="@id/other_user_profile_email_tv_id"
+            style="style/Widget.MaterialComponents.Button.TextButton"
+            />
+
+        <TextView
+            android:id="@+id/other_user_profile_doctor_details_tv_id"
+            android:layout_width="350dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginRight="10dp"
+            android:text="Doctor details :"
+            android:background="@drawable/semiround"
+            android:drawableLeft="@drawable/ic_baseline_corporate_fare_24"
+            android:padding="11dp"
+            android:drawablePadding="10dp"
+            android:textAlignment="gravity"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:textColor="#1B1A1A"
+            android:textSize="17sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/other_user_profile_view_id" />
+
+
+
+
+        <TextView
+            android:id="@+id/other_user_profile_department_tv_id"
+            android:layout_width="350dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginRight="10dp"
+            android:text="Dept :"
+            android:background="@drawable/semiround"
+            android:drawableLeft="@drawable/ic_baseline_corporate_fare_24"
+            android:padding="11dp"
+            android:drawablePadding="10dp"
+            android:textAlignment="gravity"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:textColor="#1B1A1A"
+            android:textSize="17sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/other_user_profile_doctor_details_tv_id" />
+
+
+
+        <TextView
+            android:id="@+id/other_user_profile_registration_no_tv_id"
+            android:layout_width="350dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/semiround"
+            android:drawableLeft="@drawable/ic_baseline_how_to_reg_24"
+            android:padding="11dp"
+            android:drawablePadding="10dp"
+            android:text="Reg No :"
+            android:textAlignment="textStart"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:textColor="#1B1A1A"
+            android:textSize="17sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/other_user_profile_department_tv_id" />
+
+
+        <TextView
+            android:id="@+id/other_user_profile_phone_no_tv_id"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/semiround"
+            android:drawableLeft="@drawable/ic_baseline_phone_android_24"
+            android:padding="11dp"
+            android:drawablePadding="10dp"
+            android:text="Phone No :"
+            android:textAlignment="textStart"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:textColor="#1B1A1A"
+            android:textSize="17sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/other_user_profile_registration_no_tv_id" />
+
+
+        <TextView
+            android:id="@+id/other_user_profile_blood_group_tv_id"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/semiround"
+            android:drawableLeft="@drawable/ic_blood"
+            android:padding="11dp"
+            android:drawablePadding="10dp"
+            android:text="Blood Group :"
+            android:textAlignment="textStart"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:textColor="#1B1A1A"
+            android:textSize="17sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/other_user_profile_phone_no_tv_id" />
+
+
+
+
+        <TextView
+            android:id="@+id/other_user_profile_last_day_of_blood_donation_tv_id"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/semiround"
+            android:drawableLeft="@drawable/ic_baseline_last_page_24"
+            android:padding="11dp"
+            android:drawablePadding="10dp"
+            android:text="Last day of blood donation :"
+            android:textAlignment="textStart"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:textColor="#1B1A1A"
+            android:textSize="17sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/other_user_profile_blood_group_tv_id" />
+
+
+
+
+        <TextView
+            android:id="@+id/other_user_profile_chronic_disease_tv_id"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/semiround"
+            android:drawableLeft="@drawable/ic_baseline_sick_24"
+            android:padding="11dp"
+            android:drawablePadding="10dp"
+            android:text="Chronic Disease :"
+            android:textAlignment="textStart"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:textColor="#1B1A1A"
+            android:textSize="17sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/other_user_profile_last_day_of_blood_donation_tv_id" />
+
+
+
+
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
+
+
+

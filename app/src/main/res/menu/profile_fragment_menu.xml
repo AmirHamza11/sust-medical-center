@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/profile_fragment_search_menu_option_id"
+        android:title="@string/string_Search"
+        app:showAsAction="ifRoom"
+        app:iconTint="@color/white"
+        android:icon="@drawable/ic_baseline_search_24"
+        />
+
+    <item
+        android:id="@+id/profile_fragment_logout_menu_option_id"
+        android:title="Logout"
+        app:showAsAction="ifRoom"
+        app:iconTint="@color/white"
+        android:icon="@drawable/ic_baseline_logout_24"/>
+
+
+
+</menu>

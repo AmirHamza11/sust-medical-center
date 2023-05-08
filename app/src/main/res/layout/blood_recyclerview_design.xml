@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="8dp"
+    app:cardCornerRadius="10dp"
+    android:elevation="4dp"
+
+    >
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/blood_constraintlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#f5f5f5"
+        android:padding="10dp">
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/blood_cardview"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            app:cardCornerRadius="60dp"
+            app:flow_verticalAlign="center"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toTopOf="@+id/blood_last_day_0f_donation"
+
+           >
+
+            <ImageView
+                android:id="@+id/student_profile_imageview"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/profile"
+
+                />
+        </androidx.cardview.widget.CardView>
+
+
+        <TextView
+            android:id="@+id/blood_student_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="88dp"
+            android:layout_marginTop="8dp"
+            android:layout_toRightOf="@+id/blood_cardview"
+            android:text="Gultu"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@+id/blood_cardview"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <TextView
+            android:id="@+id/blood_phone_no"
+            android:layout_width="363dp"
+            android:layout_height="22dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="4dp"
+            android:layout_toRightOf="@+id/blood_cardview"
+            android:autoLink="phone"
+            android:text="123 123 1234"
+            android:textAlignment="textStart"
+            android:textSize="18dp"
+            android:drawableLeft="@drawable/ic_baseline_call_24"
+            android:drawablePadding="10dp"
+            app:layout_constraintStart_toEndOf="@+id/blood_cardview"
+            app:layout_constraintTop_toBottomOf="@+id/blood_student_name" />
+
+        <TextView
+            android:id="@+id/blood_last_day_0f_donation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="7dp"
+            android:text="last donated: 5 dec"
+            android:textSize="17sp"
+            android:padding="3dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/blood_cardview"
+            app:layout_constraintTop_toBottomOf="@id/blood_phone_no"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="1.0">
+
+        </TextView>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+
+
+</androidx.cardview.widget.CardView>

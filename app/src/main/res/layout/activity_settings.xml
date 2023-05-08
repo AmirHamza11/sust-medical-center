@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <include layout="@layout/news_toolbar"
+        android:id="@+id/settings_toolbar">
+
+    </include>
+
+    <TextView
+        android:id="@+id/settings_account_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/settings_toolbar"
+        android:text="Account"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:padding="8dp"
+        >
+
+    </TextView>
+
+
+    <TextView
+        android:id="@+id/Password_change_tv"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:gravity="start"
+        android:text="Change Password"
+        android:background="@drawable/round_view"
+        android:drawableLeft="@drawable/ic_baseline_key_24"
+        android:padding="11dp"
+        android:drawablePadding="10dp"
+        android:textAlignment="gravity"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textColor="#1B1A1A"
+        android:textSize="17sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/settings_account_id" />
+
+
+
+    <EditText
+        android:id="@+id/Password_change_Et"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:gravity="start"
+        android:hint="Type New Password"
+        android:background="@drawable/round_view"
+        android:drawableLeft="@drawable/ic_baseline_key_24"
+        android:padding="11dp"
+        android:drawablePadding="10dp"
+        android:textAlignment="gravity"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textColor="#1B1A1A"
+        android:textSize="17sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/settings_account_id"
+        android:visibility="invisible"/>
+
+    <TextView
+        android:id="@+id/delete_account"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:gravity="start"
+        android:text="Delete Account"
+        android:background="@drawable/round_view"
+        android:drawableLeft="@drawable/ic_baseline_person_off_24"
+        android:padding="11dp"
+        android:drawablePadding="10dp"
+        android:textAlignment="gravity"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textColor="#1B1A1A"
+        android:textSize="17sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Password_change_tv" />
+
+
+    <TextView
+        android:id="@+id/settings_preference_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/delete_account"
+        android:text="Preference"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:padding="8dp"
+        >
+
+    </TextView>
+
+
+
+    <TextView
+        android:id="@+id/change_active_status"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:gravity="start"
+        android:text="change active status"
+        android:background="@drawable/round_view"
+        android:drawableLeft="@drawable/ic_baseline_person_pin_circle_24"
+        android:padding="11dp"
+        android:drawablePadding="10dp"
+        android:textAlignment="gravity"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textColor="#1B1A1A"
+        android:textSize="17sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/settings_preference_id"
+        />
+
+
+
+    <TextView
+        android:id="@+id/problem"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:gravity="start"
+        android:text="Report a Problem"
+        android:background="@drawable/round_view"
+        android:drawableLeft="@drawable/ic_baseline_report_gmailerrorred_24"
+        android:padding="11dp"
+        android:drawablePadding="10dp"
+        android:textAlignment="gravity"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textColor="#1B1A1A"
+        android:textSize="17sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/change_active_status"
+        />
+
+
+
+    <TextView
+        android:id="@+id/Email_us"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:gravity="start"
+        android:text="Email Us"
+        android:background="@drawable/round_view"
+        android:drawableLeft="@drawable/ic_baseline_attach_email_24"
+        android:padding="11dp"
+        android:drawablePadding="10dp"
+        android:textAlignment="gravity"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textColor="#1B1A1A"
+        android:textSize="17sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/problem"
+        />
+
+
+
+    <TextView
+        android:id="@+id/About"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:gravity="start"
+        android:text="About"
+        android:background="@drawable/round_view"
+        android:drawableLeft="@drawable/ic_baseline_add_business_24"
+        android:padding="11dp"
+        android:drawablePadding="10dp"
+        android:textAlignment="gravity"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textColor="#1B1A1A"
+        android:textSize="17sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Email_us"
+        />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/Savebutton_settings"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="4dp"
+        android:text="SAVE"
+        app:cornerRadius="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:strokeColor="@color/purple_200"
+        android:visibility="gone"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

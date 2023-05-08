@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="4dp"
+    app:cardCornerRadius="8dp"
+    android:elevation="8dp">
+
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/student_appointment_first_constraintLayout_id"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ffffff"
+        android:padding="6dp">
+
+        <TextView
+            android:id="@+id/student_appointment_date_textView_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBaseline_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:text="24 december"
+            android:textSize="18sp"
+            android:layout_marginStart="4dp"
+            android:textStyle="bold"
+            android:textColor="@color/teal_200"
+            app:layout_constraintTop_toTopOf="parent"
+
+            />
+
+        <TextView
+            android:id="@+id/student_appointment_list_item_appointment_time_textView_id"
+            android:layout_width="70dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="5dp"
+            android:layout_toEndOf="@+id/student_appointment_date_textView_id"
+            android:text="10.00 AM"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            app:layout_constraintStart_toEndOf="@+id/student_appointment_date_textView_id"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/student_appointment_list_item_civ_id"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="10dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintVertical_bias="0"
+            android:layout_marginBottom="10dp"
+            android:src="@drawable/d1"
+            app:layout_constraintTop_toBottomOf="@+id/student_appointment_date_textView_id"
+            app:layout_constraintStart_toStartOf="parent"/>
+
+
+        <TextView
+            android:id="@+id/student_appointment_list_item_doctor_name_textView_id"
+            android:layout_width="wrap_content"
+            app:layout_constraintHorizontal_bias="0"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="7dp"
+            android:layout_marginTop="14dp"
+            android:layout_toEndOf="@+id/student_appointment_list_item_civ_id"
+            android:text="Gultu"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toStartOf="@+id/student_appointment_list_item_show_prescription_button_id"
+            app:layout_constraintStart_toEndOf="@id/student_appointment_list_item_civ_id"
+            app:layout_constraintTop_toBottomOf="@+id/student_appointment_date_textView_id" />
+
+
+        <ImageButton
+            android:id="@+id/student_appointment_list_item_show_prescription_button_id"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:layout_marginEnd="5dp"
+            android:layout_toRightOf="@id/student_appointment_list_item_civ_id"
+            android:layout_marginTop="30dp"
+            android:src="@drawable/ic_baseline_medical_services_24"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:layout_editor_absoluteY="40dp"
+            app:tint="@color/teal_700" />
+
+        <TextView
+            android:id="@+id/student_appointment_problem_title_textView_id"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="6dp"
+            android:layout_marginTop="2dp"
+            app:layout_constraintVertical_bias="0.2"
+            android:layout_toEndOf="@+id/student_appointment_list_item_civ_id"
+            android:text="titleeee"
+            android:textAlignment="textStart"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toTopOf="@+id/student_appointment_second_constraintLayout_id"
+            app:layout_constraintEnd_toStartOf="@+id/student_appointment_list_item_show_prescription_button_id"
+            app:layout_constraintHorizontal_bias="0.035"
+            app:layout_constraintStart_toEndOf="@+id/student_appointment_list_item_civ_id"
+            app:layout_constraintTop_toBottomOf="@+id/student_appointment_list_item_doctor_name_textView_id" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/student_appointment_second_constraintLayout_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:layout_marginBottom="4dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/student_appointment_list_item_show_prescription_button_id"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+
+            app:layout_constraintTop_toBottomOf="@+id/student_appointment_list_item_civ_id">
+
+            <TextView
+                android:id="@+id/student_appointment_problem_details_textView_id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:text="descriptionnnnnnnnnn"
+                android:textSize="15sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginHorizontal="6dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0">
+
+            </TextView>
+
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/student_appointment_completed_button"
+                style="@style/Widget.MaterialComponents.Button.TextButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="End Appointment"
+                android:visibility="gone"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/student_appointment_problem_details_textView_id" />
+
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/student_appointment_list_chat_button"
+                style="@style/Widget.MaterialComponents.Button.TextButton"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:text="Chat"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/student_appointment_problem_details_textView_id"
+                app:strokeColor="#2986cc" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+</com.google.android.material.card.MaterialCardView>

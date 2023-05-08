@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    >
+
+    <include
+        android:id="@+id/include"
+        layout="@layout/news_toolbar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </include>
+
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/service_cardview"
+            android:layout_width="match_parent"
+            android:layout_height="310dp"
+            android:padding="15dp"
+            android:layout_margin="3dp"
+            app:cardCornerRadius="10dp"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical"
+            app:cardBackgroundColor="#f5f5f5"
+            app:layout_constraintTop_toBottomOf="@id/include"
+
+            >
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="10dp"
+                android:layout_marginLeft="10dp"
+
+                >
+
+                <TextView
+                    android:id="@+id/treatments"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:ellipsize="end"
+                    android:maxLines="2"
+                    android:padding="5dp"
+                    android:text="Services/Treatments"
+                    android:textColor="@color/black"
+                    android:textSize="19dp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+
+                    >
+
+                </TextView>
+
+                <ImageView
+                    android:id="@+id/treatment_image"
+                    android:layout_width="381dp"
+                    android:layout_height="229dp"
+                    android:padding="5dp"
+                    android:src="@drawable/treatment2"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.066"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/treatments">
+
+
+                </ImageView>
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+        </androidx.cardview.widget.CardView>
+
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/medicine_cardview"
+            android:layout_width="match_parent"
+            android:layout_height="310dp"
+            android:padding="15dp"
+            android:layout_margin="2dp"
+            android:layout_marginTop="5dp"
+            app:cardCornerRadius="10dp"
+            android:orientation="vertical"
+            app:cardBackgroundColor="#f5f5f5"
+            app:layout_constraintTop_toBottomOf="@id/service_cardview"
+
+            >
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="10dp"
+                android:layout_marginLeft="10dp"
+
+                >
+
+                <TextView
+                    android:id="@+id/Medicines"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:ellipsize="end"
+                    android:maxLines="2"
+                    android:padding="5dp"
+                    android:text="Medicines"
+                    android:textColor="@color/black"
+                    android:textSize="19dp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+
+                    >
+
+                </TextView>
+                <ImageView
+                    android:id="@+id/medicine_image"
+                    android:layout_width="381dp"
+                    android:layout_height="229dp"
+                    android:padding="5dp"
+                    android:src="@drawable/medicine"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.066"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/Medicines">
+
+
+                </ImageView>
+
+
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+        </androidx.cardview.widget.CardView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+

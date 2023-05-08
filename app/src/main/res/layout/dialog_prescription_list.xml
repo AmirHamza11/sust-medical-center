@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="15dp">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+    <TextView
+        android:id="@+id/textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Prescription"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        />
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/prescription_list_dialog_prescription_list_recyclerView_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            app:flow_horizontalBias="0"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textview">
+
+
+        </androidx.recyclerview.widget.RecyclerView>
+
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/prescription_list_dialog_add_new_medicine_button_id"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton.Icon"
+        android:visibility="gone"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:text="Add"
+        app:icon="@drawable/ic_baseline_add_circle_outline_24"
+        app:iconTint="@color/purple_200"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/prescription_list_dialog_prescription_list_recyclerView_id"
+        app:rippleColor="@color/purple_200"
+        app:strokeColor="@color/purple_200"
+        app:strokeWidth="3dp" />
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

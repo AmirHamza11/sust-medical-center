@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="6dp">
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_margin="3dp"
+        android:elevation="11dp"
+        app:strokeColor="#4B514545"
+
+
+        app:strokeWidth="1dp">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:layout_margin="5dp">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/doctor_display_image_id"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:src="@drawable/d1"
+                android:layout_margin="4dp"/>
+
+            <TextView
+                android:id="@+id/doctor_name_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Dr. ABC DEFG"
+                android:textStyle="bold"
+                android:layout_marginBottom="3dp"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/doctor_appointment_count_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:text="Appointments: 15"
+                android:layout_marginBottom="4dp"
+                android:textSize="13sp"/>
+
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+    </com.google.android.material.card.MaterialCardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

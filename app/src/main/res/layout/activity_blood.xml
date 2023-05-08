@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <include
+        android:id="@+id/include_blood"
+        layout="@layout/news_toolbar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </include>
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/blood_cardview"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        app:cardCornerRadius="13dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+
+
+        app:layout_constraintTop_toBottomOf="@id/include_blood">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+
+
+        <TextView
+            android:id="@+id/available_blood"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="Available Blood Groups:"
+            android:textColor="@color/black"
+            android:textSize="19dp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+
+            >
+
+        </TextView>
+        <TextView
+            android:id="@+id/blood_apositive"
+            android:layout_width="350dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginRight="10dp"
+            android:gravity="start"
+            android:text="A+"
+            android:background="@drawable/round_view"
+            android:drawableLeft="@drawable/ic_blood"
+            android:padding="11dp"
+            android:drawablePadding="10dp"
+            android:textAlignment="gravity"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:textColor="#1B1A1A"
+            android:textSize="17sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/available_blood" />
+
+            <TextView
+                android:id="@+id/blood_anegative"
+                android:layout_width="350dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginRight="10dp"
+                android:gravity="start"
+                android:text="A-"
+                android:background="@drawable/round_view"
+                android:drawableLeft="@drawable/ic_blood"
+                android:padding="11dp"
+                android:drawablePadding="10dp"
+                android:textAlignment="gravity"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                android:textColor="#1B1A1A"
+                android:textSize="17sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/blood_apositive" />
+
+
+            <TextView
+                android:id="@+id/blood_bpositive"
+                android:layout_width="350dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginRight="10dp"
+                android:gravity="start"
+                android:text="B+"
+                android:background="@drawable/round_view"
+                android:drawableLeft="@drawable/ic_blood"
+                android:padding="11dp"
+                android:drawablePadding="10dp"
+                android:textAlignment="gravity"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                android:textColor="#1B1A1A"
+                android:textSize="17sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/blood_anegative" />
+
+            <TextView
+                android:id="@+id/blood_bnegative"
+                android:layout_width="350dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginRight="10dp"
+                android:gravity="start"
+                android:text="B-"
+                android:background="@drawable/round_view"
+                android:drawableLeft="@drawable/ic_blood"
+                android:padding="11dp"
+                android:drawablePadding="10dp"
+                android:textAlignment="gravity"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                android:textColor="#1B1A1A"
+                android:textSize="17sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/blood_bpositive" />
+            <TextView
+                android:id="@+id/blood_opositive"
+                android:layout_width="350dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginRight="10dp"
+                android:gravity="start"
+                android:text="O+"
+                android:background="@drawable/round_view"
+                android:drawableLeft="@drawable/ic_blood"
+                android:padding="11dp"
+                android:drawablePadding="10dp"
+                android:textAlignment="gravity"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                android:textColor="#1B1A1A"
+                android:textSize="17sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/blood_bnegative" />
+
+            <TextView
+                android:id="@+id/blood_onegative"
+                android:layout_width="350dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginRight="10dp"
+                android:gravity="start"
+                android:text="O-"
+                android:background="@drawable/round_view"
+                android:drawableLeft="@drawable/ic_blood"
+                android:padding="11dp"
+                android:drawablePadding="10dp"
+                android:textAlignment="gravity"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                android:textColor="#1B1A1A"
+                android:textSize="17sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/blood_opositive" />
+
+            <TextView
+                android:id="@+id/blood_abpositive"
+                android:layout_width="350dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginRight="10dp"
+                android:gravity="start"
+                android:text="AB+"
+                android:background="@drawable/round_view"
+                android:drawableLeft="@drawable/ic_blood"
+                android:padding="11dp"
+                android:drawablePadding="10dp"
+                android:textAlignment="gravity"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                android:textColor="#1B1A1A"
+                android:textSize="17sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/blood_onegative" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </com.google.android.material.card.MaterialCardView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

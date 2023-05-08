@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android"
+    android:opacity="opaque">
+
+    <item android:drawable="?attr/colorSurface"/>
+
+    <item
+        android:height="150dp"
+        android:width="150dp"
+        android:bottom="250dp"
+        android:gravity="center">
+        <bitmap android:src="@drawable/sust_logo"/>
+    </item>
+
+    <item
+        android:height="45dp"
+        android:width="260dp"
+        android:bottom="180dp"
+        android:gravity="bottom|center_horizontal">
+        <bitmap android:src="@drawable/splash_text"/>
+    </item>
+
+
+</layer-list>
